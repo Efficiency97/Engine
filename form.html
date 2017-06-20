@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发动机远程监控与智能诊断</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .table{
+            width: 80%;
+            height: 500px;
+            text-align: center;
+            font-size:18px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        th{
+            text-align: center;
+            vertical-align: middle !important;
+        }
+        td{
+            vertical-align: middle !important;
+        }
+        .title{
+            position: relative;
+            width: 1000px;
+            height: 50px;
+            margin-top: 100px;
+            margin-left: 50px;
+            border-bottom: 1px solid #ddd;
+            border-left: 6px solid #e77674;
+        }
+        .title-inner{
+            position: absolute;
+            width: 100%;
+            height:50px;
+            font-size: 25px;
+            font-family:'微软雅黑';
+            line-height: 60px;
+            left: 15px;
+            bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="title">
+    <div class="title-inner">诊断结果</div>
+</div>
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            exception_T </br>
+            character varying(128)
+        </th>
+        <th>
+            exception_P1 </br>
+            character varying(128)
+        </th>
+        <th>
+            exception_P2 </br>
+            character varying(128)
+        </th>
+        <th>
+            exception_L1 </br>
+            character varying(128)
+        </th>
+        <th>
+            exception_L2 </br>
+            character varying(128)
+        </th>
+        <th>
+            exception_X </br>
+            character varying(128)
+        </th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>
