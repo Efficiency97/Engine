@@ -39,7 +39,7 @@ body{
     height: 600px;
     border: 1px solid #000;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 15px;
     padding: 20px;
     .box{
       float: left;
@@ -60,7 +60,7 @@ body{
         font-size:20px;
         font-family:'Adobe 宋体 Std L';
       }
-      input{
+      .input-content{
         position: absolute;
         top: 50px;
         left: -17px;
@@ -69,7 +69,7 @@ body{
         margin-left: 20px;
         border-radius: 0px;
       }
-      input:focus{
+      .input-content:focus{
         box-shadow: 0px 0px 0px 0px;
         border: 1px solid #e77674;
       }
@@ -104,3 +104,17 @@ body{
     }
   }
 }
+.choose-engin{
+  margin-left:49px;
+  margin-top: 10px;
+}
+.drop-engin{
+  border-radius: 0px !important;
+}
+.choose-cooling{
+  margin-left:230px;
+  margin-top: -46px;
+}.drop-cooling{
+   border-radius: 0px !important;
+ }
+

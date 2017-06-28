@@ -5,6 +5,7 @@
     <title>发动机远程监控与智能诊断系统</title>
     <link rel="stylesheet" href="jump-base.css">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
 </head>
 <body>
 <div class="auto">
@@ -12,42 +13,77 @@
         <div class="haoma-title">
             <div class="haoma-inner">故障诊断</div>
         </div>
+        <div class="dropdown choose-engin">
+            <button class="btn btn-default btn-lg dropdown-toggle drop-engin" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                发动机类型
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu menu-engin" aria-labelledby="dropdownMenu1" style="display: none">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="dropdown choose-cooling">
+            <button class="btn btn-default btn-lg dropdown-toggle drop-cooling" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                冷却方式
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu menu-cooling"  aria-labelledby="dropdownMenu1" style="display: none">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
         <div class="connent">
             <ul class="box">
+                <!--<li>-->
+                    <!--<div class="choosetype">-->
+                        <!--<span class="type-1 ">发动机类型</span>-->
+                        <!--<input type="radio" class="check-1" name="type">-->
+                        <!--<input type="radio" class="check-1" name="type">-->
+                    <!--</div>-->
+                    <!--<div class="choosetype">-->
+                        <!--<span class="type-2 ">冷却方式</span>-->
+                        <!--<input type="radio" class="check-2" name="type-2">-->
+                        <!--<input type="radio" class="check-2" name="type-2">-->
+                    <!--</div>-->
+                <!--</li>-->
                 <li>
                     <div class="box1">
                         <label for="tem" class="item">冷却液温度T</label>
-                        <input type="text" class="form-control" id="tem" placehoder="">
+                        <input type="text" class="form-control input-content" id="tem" placehoder="" >
                     </div>
                 </li>
                 <li>
                     <div class="box1">
                         <label for="waterpa" class="item">水泵压力P1</label>
-                        <input type="text" class="form-control" id="waterpa" placehoder="">
+                        <input type="text" class="form-control input-content" id="waterpa" placehoder="">
                     </div>
                 </li>
                 <li>
                     <div class="box1">
                         <label for="atopa" class="item">气缸压缩压力P2</label>
-                        <input type="text" class="form-control" id="atopa" placehoder="">
+                        <input type="text" class="form-control input-content" id="atopa" placehoder="">
                     </div>
                 </li>
                 <li>
                     <div class="box1">
                         <label for="atogap" class="item">气温器主阀门间隙</label>
-                        <input type="text" class="form-control" id="atogap" placehoder="">
+                        <input type="text" class="form-control input-content" id="atogap" placehoder="">
                     </div>
                 </li>
                 <li>
                     <div class="box1">
                         <label for="watergap" class="item">水泵轴与叶轮间隙</label>
-                        <input type="text" class="form-control" id="watergap" placehoder="">
+                        <input type="text" class="form-control input-content" id="watergap" placehoder="">
                     </div>
                 </li>
                 <li>
                     <div class="box1">
                         <label for="wind" class="item">风的传功带偏移量</label>
-                        <input type="text" class="form-control" id="wind" placehoder="">
+                        <input type="text" class="form-control input-content" id="wind" placehoder="">
                     </div>
                 </li>
             </ul>
@@ -68,6 +104,12 @@
     </div>
 </div>
 <script>
+    $('.drop-engin').click(function () {
+        $('.menu-engin').toggle()
+    });
+    $('.drop-cooling').click(function () {
+        $('.menu-cooling').toggle()
+    })
 </script>
 </body>
 </html>
